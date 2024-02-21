@@ -122,10 +122,10 @@ def run(cyto_job, parameters):
                 #Dump ROI image into local PNG file
                 # roi_path=os.path.join(working_path,str(roi_annotations.project)+'/'+str(roi_annotations.image)+'/'+str(roi.id))
                 roi_path=os.path.join(working_path,str(roi_annotations.project)+'/'+str(roi_annotations.image)+'/')
-                print(roi_path)
+                # print(roi_path)
                 roi_png_filename=os.path.join(roi_path+str(roi.id)+'.png')
                 print("roi_png_filename: %s" %roi_png_filename)
-                # roi.dump(dest_pattern=roi_png_filename)
+                roi.dump(dest_pattern=roi_png_filename)
                 # im=Image.open(roi_png_filename)
 
                 # check white patches
